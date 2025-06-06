@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+h1{
+    text-transform: uppercase;
+    font-family:Libre Baskerville,serif;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+#main_div{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    text-align: center;
+    color:aqua;
+
+}
+img{
+    border: 5px solid yellow;
+    width: 100%;
+}
+p{
+    font-size: 2rem;
+}
