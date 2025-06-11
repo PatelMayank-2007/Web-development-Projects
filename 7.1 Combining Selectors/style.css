@@ -2,7 +2,7 @@
 /* Group */
 h1,
 h2 {
-  color: blueviolet;
+  color:cyan;
 }
 
 /* Child */
@@ -17,7 +17,7 @@ h2 {
 
 /* Chained */
 li.done {
-  color: green;
+  color:forestgreen;
 }
 
 /* Multiple Combiners */
