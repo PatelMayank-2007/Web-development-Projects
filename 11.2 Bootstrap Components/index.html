@@ -11,10 +11,29 @@
       crossorigin="anonymous"
     />
     <style>
+      .btn-primary {
+        background: linear-gradient(90deg, #007bff, #00d4ff);
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+      }
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        transition: 0.3s;
+      }
       .feature-icon {
         width: 4rem;
         height: 4rem;
-        border-radius: 0.75rem;
+        border-radius: 1rem;
+        background: linear-gradient(135deg, #00d4ff, #007bff);
+        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+      }
+      .navbar-brand {
+        color: #00d4ff;
+      }
+      .btn-outline-success{
+        background: linear-gradient(135deg, #00d4ff, #007bff);
+        color:black;
+        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
       }
     </style>
   </head>
@@ -23,7 +42,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="./box-seam.svg" alt="moveit brand icon" height="30" />Move
+          ><img src="./box-seam.svg" alt="moveit brand icon" height="30" />
+          Move
           It</a
         >
         <button
