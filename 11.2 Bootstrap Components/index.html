@@ -105,6 +105,8 @@
             background: linear-gradient(90deg, #007bff, #00d4ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text; /* for newer browsers without prefix */
+            color: transparent; /* fallback */
           "
         >
           JOY
