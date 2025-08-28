@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Background Video Styling */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: #ddccc4;
+}
+
+/* Hero Section Layout */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+}
+
+.text {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    z-index: 10;
+}
+
+.left-text {
+    text-align: right;
+}
+
+.right-text {
+    text-align: left;
+}
+
+/* Side Text */
+.side-text {
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.side-text.left {
+    left: 15px;
+    transform: rotate(-90deg) translateY(-50%);
+}
+
+.side-text.right {
+    right: 15px;
+    transform: rotate(90deg) translateY(-50%);
+}
+
+/* Floating Chocolates */
+.choco {
+    position: absolute;
+    width: 20%;
+    animation: floatChoco 5s ease-in-out infinite;
+    z-index: 10;
+}
+
+.left-choco {
+    top: 25%;
+    left: 10%;
+}
+
+.right-choco {
+    top: 60%;
+    right: 10%;
+}
+
+@keyframes floatChoco {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(5deg);
+    }
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    z-index: 10;
+}
+
+footer .social a {
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .social a:hover {
+    color: #ffcc66;
+}
+
+footer .contact a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+
+footer .contact a:hover {
+    color: #ddccc4;
+    border-bottom-color: #ddccc4;
+}
